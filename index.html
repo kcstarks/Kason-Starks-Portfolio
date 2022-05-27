@@ -10,32 +10,172 @@
   <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="projects.html">Projects</a>
-            </li>
-          </ul>
-        </div>
 
-    </nav>
+    <header id="header">
+      <nav id="nav">
+        <ul id="navbar">
+          <li class="navbar-item"><button class="button btn"><a class="navbar-link stretched-link" href="#home">Home</a></button></li>
+          <li class="navbar-item"><button class="button btn"><a class="navbar-link stretched-link" href="#about">About</a></button></li>
+          <li class="navbar-item"><button class="button btn"><a class="navbar-link stretched-link" href="#projects">Projects</a></button></li>
+        </ul>
+      </nav>
+    </header>
 
-    <div class="row">
-        <div class="col">
-            <h1 class="jumbotron">Home Page</h1>
+    <main>
+
+
+
+      <section id="sect-home">
+        <article id="art-home">
+          <div class="text">
+            <h2 id="home">Welcome to my Portfolio,</h2>
+            <h3>I'm Kason Starks</h3>
+          </div>
+
+        </article>
+      </section>
+
+
+      <section id="sect-about">
+        <div id="sect-about-inner">
+          <article id="art-about-left">
+            <div id="inner-about-left">
+
+              <div id="about-left">
+                <img id="img-book" src="https://www.svgrepo.com/show/124339/book-opened-symmetrical-shape.svg" alt="Book Icon">
+                <h4 id="about">Education</h4>
+                <p>I studied Philosophy at the University of Texas at Arlington where I received a Bachelor of Arts Degree.</p>
+                <h5>I know things like:</h5>
+
+                <section id="sect-learn">
+                  <article id="art-learn-left">
+                    <div id="r1c1">
+                      <div><img id="img-logic" src="https://www.svgrepo.com/show/25853/mind-gears.svg" alt="Logic Icon"></div>
+                      <h5>Logic Systems</h5>
+                      <hr>
+                    </div>
+                    <p id="r2c1">We covered things like: Boolean Logic, Set Theory, logic operators, Modal Logic, distinguishing Epistemic/ Doxastic/ Deontic logic.</p>
+                    <div id="r3c1">
+                      <div><img id="img-prog" src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAxNzIgMTcyIj48ZyB0cmFuc2Zvcm09IiI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJub256ZXJvIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiIHN0cm9rZS1saW5lam9pbj0ibWl0ZXIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWRhc2hhcnJheT0iIiBzdHJva2UtZGFzaG9mZnNldD0iMCIgZm9udC1mYW1pbHk9Im5vbmUiIGZvbnQtd2VpZ2h0PSJub25lIiBmb250LXNpemU9Im5vbmUiIHRleHQtYW5jaG9yPSJub25lIiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6IG5vcm1hbCI+PHBhdGggZD0iTTAsMTcydi0xNzJoMTcydjE3MnoiIGZpbGw9IiNjYjJkNmYiPjwvcGF0aD48ZyBpZD0ib3JpZ2luYWwtaWNvbiIgZmlsbD0iIzAwMDAwMCI+PHBhdGggZD0iTTEzLjc2LDEzLjc2Yy0zLjc2MDE0LDAgLTYuODgsMy4xMTk4NiAtNi44OCw2Ljg4djk5Ljc2YzAsMy43NjAxNCAzLjExOTg2LDYuODggNi44OCw2Ljg4aDUxLjZ2MTAuMzJoLTEwLjMyYy01LjY1ODcsMCAtMTAuMzIsNC42NjEzIC0xMC4zMiwxMC4zMnY2Ljg4YzAuMDAwMTksMS44OTk3OCAxLjU0MDIyLDMuNDM5ODEgMy40NCwzLjQ0aDc1LjY4YzEuODk5NzgsLTAuMDAwMTkgMy40Mzk4MSwtMS41NDAyMiAzLjQ0LC0zLjQ0di02Ljg4YzAsLTUuNjU4NyAtNC42NjEzLC0xMC4zMiAtMTAuMzIsLTEwLjMyaC0xMC4zMnYtMTAuMzJoNTEuNmMzLjc2MDE0LDAgNi44OCwtMy4xMTk4NiA2Ljg4LC02Ljg4di05OS43NmMwLC0zLjc2MDE0IC0zLjExOTg2LC02Ljg4IC02Ljg4LC02Ljg4ek0xMy43NiwyMC42NGgxNDQuNDh2NzkuMTJoLTE0NC40OHpNOTYuMTQ1MzEsMzAuOTE5NjljLTEuMzc4MjYsMC4wNzc3OSAtMi41NzY1NiwwLjk3MTg5IC0zLjA0MzYsMi4yNzA5NGwtMjAuNjQsNTUuMDRjLTAuNDg2MSwxLjE2MTc1IC0wLjI5ODYsMi40OTYyNSAwLjQ4ODgyLDMuNDc5MDZjMC43ODc0MiwwLjk4MjgxIDIuMDQ4OSwxLjQ1Njg2IDMuMjg4NywxLjIzNTgzYzEuMjM5OCwtMC4yMjEwMiAyLjI1OTc2LC0xLjEwMTc4IDIuNjU5MDQsLTIuMjk2MTVsMjAuNjQsLTU1LjA0YzAuNDI2OTQsLTEuMDkwMTcgMC4yNzAxNywtMi4zMjI2MyAtMC40MTYxMSwtMy4yNzExOWMtMC42ODYyOCwtMC45NDg1NiAtMS44MDc4NSwtMS40ODMgLTIuOTc2ODYsLTEuNDE4NXpNMTEwLjA4NjcyLDQxLjIzOTY5Yy0xLjMzOTM4LC0wLjAxNjAxIC0yLjU2NjI4LDAuNzQ2ODIgLTMuMTQ0NDYsMS45NTUwOWMtMC41NzgxOCwxLjIwODI2IC0wLjQwMjUsMi42NDIyNiAwLjQ1MDI0LDMuNjc1MjNsMTIuMDQsMTUuMDVsLTEyLjA0LDE1LjA1Yy0wLjc2ODUzLDAuOTYwMTIgLTAuOTY2MzQsMi4yNTczNSAtMC41MTg5MSwzLjQwMjg5YzAuNDQ3NDMsMS4xNDU1NCAxLjQ3MjExLDEuOTY1MjggMi42ODc5MywyLjE1MDM0YzEuMjE1ODIsMC4xODUwNiAyLjQzNzk5LC0wLjI5MjY5IDMuMjA1OTgsLTEuMjUzMjNsMTMuNzYsLTE3LjJjMS4wMDYwNywtMS4yNTY3OSAxLjAwNjA3LC0zLjA0MzIxIDAsLTQuM2wtMTMuNzYsLTE3LjJjLTAuNjQzODIsLTAuODI5MjMgLTEuNjMxMDIsLTEuMzE5MTIgLTIuNjgwNzgsLTEuMzMwMzF6TTYxLjgxMjUsNDEuMjQ2NGMtMS4wMTMwMSwwLjAzOTUyIC0xLjk1NzAyLDAuNTIzODIgLTIuNTgsMS4zMjM2bC0xMy43NiwxNy4yYy0xLjAwNjA3LDEuMjU2NzkgLTEuMDA2MDcsMy4wNDMyMSAwLDQuM2wxMy43NiwxNy4yYzAuNzY4LDAuOTYwNTQgMS45OTAxNywxLjQzODI5IDMuMjA1OTgsMS4yNTMyM2MxLjIxNTgyLC0wLjE4NTA2IDIuMjQwNSwtMS4wMDQ4IDIuNjg3OTMsLTIuMTUwMzRjMC40NDc0MywtMS4xNDU1NCAwLjI0OTYxLC0yLjQ0Mjc3IC0wLjUxODkxLC0zLjQwMjg5bC0xMi4wNCwtMTUuMDVsMTIuMDQsLTE1LjA1YzAuODYxNywtMS4wNDcxNiAxLjAyNzg0LC0yLjUwMjg0IDAuNDI0MjcsLTMuNzE3MjRjLTAuNjAzNTcsLTEuMjE0NCAtMS44NjQyNCwtMS45NjA5MyAtMy4yMTkyNywtMS45MDYzNXpNMTMuNzYsMTA2LjY0aDE0NC40OHYxMy43NmgtNTUuMDRoLTM0LjRoLTU1LjA0ek0xNDQuNDgsMTEwLjA4Yy0xLjg5OTg2LDAgLTMuNDQsMS41NDAxNCAtMy40NCwzLjQ0YzAsMS44OTk4NiAxLjU0MDE0LDMuNDQgMy40NCwzLjQ0YzEuODk5ODYsMCAzLjQ0LC0xLjU0MDE0IDMuNDQsLTMuNDRjMCwtMS44OTk4NiAtMS41NDAxNCwtMy40NCAtMy40NCwtMy40NHpNNzIuMjQsMTI3LjI4aDI3LjUydjEwLjMyaC0yNy41MnpNNTUuMDQsMTQ0LjQ4aDYxLjkyYzEuOTQzNywwIDMuNDQsMS40OTYzIDMuNDQsMy40NHYzLjQ0aC02OC44di0zLjQ0YzAsLTEuOTQzNyAxLjQ5NjMsLTMuNDQgMy40NCwtMy40NHoiPjwvcGF0aD48L2c+PHBhdGggZD0iIiBmaWxsPSJub25lIj48L3BhdGg+PC9nPjwvZz48L3N2Zz4=" alt=""></div>
+                      <h5>Programs</h5>
+                      <hr>
+                    </div>
+                    <p id="r4c1">HTML5, CSS, Bootstrap</p>
+                  </article>
+                  <article id="art-learn-right">
+                    <div id="r1c2">
+                      <div><img id="img-com" src="https://www.svgrepo.com/show/154812/communication-between-users.svg" alt=""></div>
+                      <h5>Communication</h5>
+                      <hr>
+                    </div>
+                    <p id="r234c2">Through extensive reading and writing of complex concepts, I'm well adjusted to understanding someone's position and expressing myself in relation to their point of view. And by being involved with the ins and outs of arguments within a neutral setting, I've strengthened my conflict resolution skills.</p>
+                  </article>
+                </section>
+              </div>
+            </div>
+          </article>
+
+          <article id="art-about-right">
+            <div id="inner-about-right">
+
+              <div id="about-right">
+                <div><img id="img-hob" src="https://www.svgrepo.com/show/191009/kite-hobbies-and-free-time.svg" alt=""></div>
+                <h4>Hobbies & Free-time</h4>
+
+                <section id="sect-hob">
+                  <article id="art-hob">
+                    <div id="homestead">
+                      <img id="img-water" src="https://www.svgrepo.com/show/106869/watering-can-with-water-drops.svg" alt="">
+                      <h5>Homestead</h5>
+                      <p>I take care of a 500ft&#178; garden, 17 chickens, and a beehive.</p>
+                    </div>
+
+                    <div id="philosophy">
+                      <img id="img-read" src="https://www.svgrepo.com/show/311133/reading-mode.svg" alt="">
+                      <h5>Philosophy</h5>
+                      <p>I love to watch lectures/read about the development of German Idealism & French Thought.</p>
+                    </div>
+
+                    <div id="guitar">
+                      <img id="img-guitar" src="https://www.svgrepo.com/show/53146/guitar.svg" alt="">
+                      <h5>Guitar</h5>
+                      <p>The Blues is definitely my kind of music. There's nothing like being able to recreate some of the syncopated picking patterns and melodies.</p>
+                    </div>
+
+                  </article>
+                </section>
+
+
+
+              </div>
+            </div>
+          </article>
         </div>
-    </div>
+      </section>
+
+
+      <section id="sect-projects">
+        <article id="art-projects">
+          <div>
+            <h2 id="projects">Projects</h2>
+
+            <div class="row">
+
+              <div class="col-sm-6 col-lg-4">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Promotional Email</h5>
+                    <p class="card-text">A recreated UberEats promotional email with HTML & CSS.</p>
+                    <p class="card-text">Utilizing: XHTML, table structures, and includes additional meta tags & ghost tables for Apple, Gmail, & Outlook email/webmail clients.</p>
+                    <a href="Promotional/promotional-email.html" class="stretched-link" target="_blank" rel="noopener noreferrer"></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-lg-4">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Newsletter Email</h5>
+                    <p class="card-text">A recreated Ebay newsletter email with HTML & CSS.</p>
+                    <p class="card-text">Utilizing: XHTML, table structures, and includes additional meta tags & ghost tables for Apple, Gmail, & Outlook email/webmail clients.</p>
+                    <a href="newsletter.html" class="stretched-link" target="_blank" rel="noopener noreferrer"></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-6 col-lg-4">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Transactional Email</h5>
+                    <p class="card-text">A recreated ____ transactional email with HTML & CSS.</p>
+                    <p class="card-text">Utilizing: XHTML, table structures, and includes additional meta tags & ghost tables for Apple, Gmail, & Outlook email/webmail clients.</p>
+                    <a href="transactional.html" class="stretched-link" target="_blank" rel="noopener noreferrer"></a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="row">
+
+              <div class="col-sm-6 col-lg-4">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Product Page</h5>
+                    <p class="card-text">A recreated Spotify product page with HTML & CSS.</p>
+                    <p class="card-text">Utilizing: CSS grids, flexbox, and media queries.</p>
+                    <a href="Landing-Page/landingpage.html" class="stretched-link" target="_blank" rel="noopener noreferrer"></a>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </article>
+      </section>
+
+    </main>
+
 
   </body>
 </html>
