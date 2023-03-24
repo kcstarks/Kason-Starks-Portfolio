@@ -203,6 +203,7 @@ footer h4{font-size: 1rem;}
 .social{
     max-width: 24px;
     max-height: 24px;
+    margin-left: 5px;
 }
 
 .link-bar,
