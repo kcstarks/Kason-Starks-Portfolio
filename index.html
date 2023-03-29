@@ -1,181 +1,261 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Kason Starks</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link href="style.css" rel="stylesheet" type="text/css">
-  </head>
-  <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class="bg-green">
 
-
-    <header id="header">
-      <nav id="nav">
-        <ul id="navbar">
-          <li class="navbar-item"><button class="button btn"><a class="navbar-link stretched-link" href="#home">Home</a></button></li>
-          <li class="navbar-item"><button class="button btn"><a class="navbar-link stretched-link" href="#about">About</a></button></li>
-          <li class="navbar-item"><button class="button btn"><a class="navbar-link stretched-link" href="#projects">Projects</a></button></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-
-
-
-      <section id="sect-home">
-        <article id="art-home">
-          <div class="text">
-            <h2 id="home">Welcome to my Portfolio,</h2>
-            <h3>I'm Kason Starks</h3>
-          </div>
-
-        </article>
-      </section>
-
-
-      <section id="sect-about">
-        <div id="sect-about-inner">
-          <article id="art-about-left">
-            <div id="inner-about-left">
-
-              <div id="about-left">
-                <img id="img-book" src="https://www.svgrepo.com/show/124339/book-opened-symmetrical-shape.svg" alt="Book Icon">
-                <h4 id="about">Education</h4>
-                <p>I studied Philosophy at the University of Texas at Arlington where I received a Bachelor of Arts Degree.</p>
-                <h5>I know things like:</h5>
-
-                <section id="sect-learn">
-                  <article id="art-learn-left">
-                    <div id="r1c1">
-                      <div><img id="img-logic" src="https://www.svgrepo.com/show/25853/mind-gears.svg" alt="Logic Icon"></div>
-                      <h5>Logic Systems</h5>
-                      <hr>
-                    </div>
-                    <p id="r2c1">We covered things like: Boolean Logic, Set Theory, logic operators, Modal Logic, distinguishing Epistemic/ Doxastic/ Deontic logic.</p>
-                    <div id="r3c1">
-                      <div><img id="img-prog" src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZpZXdCb3g9IjAgMCAxNzIgMTcyIj48ZyB0cmFuc2Zvcm09IiI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJub256ZXJvIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiIHN0cm9rZS1saW5lam9pbj0ibWl0ZXIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWRhc2hhcnJheT0iIiBzdHJva2UtZGFzaG9mZnNldD0iMCIgZm9udC1mYW1pbHk9Im5vbmUiIGZvbnQtd2VpZ2h0PSJub25lIiBmb250LXNpemU9Im5vbmUiIHRleHQtYW5jaG9yPSJub25lIiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6IG5vcm1hbCI+PHBhdGggZD0iTTAsMTcydi0xNzJoMTcydjE3MnoiIGZpbGw9IiNjYjJkNmYiPjwvcGF0aD48ZyBpZD0ib3JpZ2luYWwtaWNvbiIgZmlsbD0iIzAwMDAwMCI+PHBhdGggZD0iTTEzLjc2LDEzLjc2Yy0zLjc2MDE0LDAgLTYuODgsMy4xMTk4NiAtNi44OCw2Ljg4djk5Ljc2YzAsMy43NjAxNCAzLjExOTg2LDYuODggNi44OCw2Ljg4aDUxLjZ2MTAuMzJoLTEwLjMyYy01LjY1ODcsMCAtMTAuMzIsNC42NjEzIC0xMC4zMiwxMC4zMnY2Ljg4YzAuMDAwMTksMS44OTk3OCAxLjU0MDIyLDMuNDM5ODEgMy40NCwzLjQ0aDc1LjY4YzEuODk5NzgsLTAuMDAwMTkgMy40Mzk4MSwtMS41NDAyMiAzLjQ0LC0zLjQ0di02Ljg4YzAsLTUuNjU4NyAtNC42NjEzLC0xMC4zMiAtMTAuMzIsLTEwLjMyaC0xMC4zMnYtMTAuMzJoNTEuNmMzLjc2MDE0LDAgNi44OCwtMy4xMTk4NiA2Ljg4LC02Ljg4di05OS43NmMwLC0zLjc2MDE0IC0zLjExOTg2LC02Ljg4IC02Ljg4LC02Ljg4ek0xMy43NiwyMC42NGgxNDQuNDh2NzkuMTJoLTE0NC40OHpNOTYuMTQ1MzEsMzAuOTE5NjljLTEuMzc4MjYsMC4wNzc3OSAtMi41NzY1NiwwLjk3MTg5IC0zLjA0MzYsMi4yNzA5NGwtMjAuNjQsNTUuMDRjLTAuNDg2MSwxLjE2MTc1IC0wLjI5ODYsMi40OTYyNSAwLjQ4ODgyLDMuNDc5MDZjMC43ODc0MiwwLjk4MjgxIDIuMDQ4OSwxLjQ1Njg2IDMuMjg4NywxLjIzNTgzYzEuMjM5OCwtMC4yMjEwMiAyLjI1OTc2LC0xLjEwMTc4IDIuNjU5MDQsLTIuMjk2MTVsMjAuNjQsLTU1LjA0YzAuNDI2OTQsLTEuMDkwMTcgMC4yNzAxNywtMi4zMjI2MyAtMC40MTYxMSwtMy4yNzExOWMtMC42ODYyOCwtMC45NDg1NiAtMS44MDc4NSwtMS40ODMgLTIuOTc2ODYsLTEuNDE4NXpNMTEwLjA4NjcyLDQxLjIzOTY5Yy0xLjMzOTM4LC0wLjAxNjAxIC0yLjU2NjI4LDAuNzQ2ODIgLTMuMTQ0NDYsMS45NTUwOWMtMC41NzgxOCwxLjIwODI2IC0wLjQwMjUsMi42NDIyNiAwLjQ1MDI0LDMuNjc1MjNsMTIuMDQsMTUuMDVsLTEyLjA0LDE1LjA1Yy0wLjc2ODUzLDAuOTYwMTIgLTAuOTY2MzQsMi4yNTczNSAtMC41MTg5MSwzLjQwMjg5YzAuNDQ3NDMsMS4xNDU1NCAxLjQ3MjExLDEuOTY1MjggMi42ODc5MywyLjE1MDM0YzEuMjE1ODIsMC4xODUwNiAyLjQzNzk5LC0wLjI5MjY5IDMuMjA1OTgsLTEuMjUzMjNsMTMuNzYsLTE3LjJjMS4wMDYwNywtMS4yNTY3OSAxLjAwNjA3LC0zLjA0MzIxIDAsLTQuM2wtMTMuNzYsLTE3LjJjLTAuNjQzODIsLTAuODI5MjMgLTEuNjMxMDIsLTEuMzE5MTIgLTIuNjgwNzgsLTEuMzMwMzF6TTYxLjgxMjUsNDEuMjQ2NGMtMS4wMTMwMSwwLjAzOTUyIC0xLjk1NzAyLDAuNTIzODIgLTIuNTgsMS4zMjM2bC0xMy43NiwxNy4yYy0xLjAwNjA3LDEuMjU2NzkgLTEuMDA2MDcsMy4wNDMyMSAwLDQuM2wxMy43NiwxNy4yYzAuNzY4LDAuOTYwNTQgMS45OTAxNywxLjQzODI5IDMuMjA1OTgsMS4yNTMyM2MxLjIxNTgyLC0wLjE4NTA2IDIuMjQwNSwtMS4wMDQ4IDIuNjg3OTMsLTIuMTUwMzRjMC40NDc0MywtMS4xNDU1NCAwLjI0OTYxLC0yLjQ0Mjc3IC0wLjUxODkxLC0zLjQwMjg5bC0xMi4wNCwtMTUuMDVsMTIuMDQsLTE1LjA1YzAuODYxNywtMS4wNDcxNiAxLjAyNzg0LC0yLjUwMjg0IDAuNDI0MjcsLTMuNzE3MjRjLTAuNjAzNTcsLTEuMjE0NCAtMS44NjQyNCwtMS45NjA5MyAtMy4yMTkyNywtMS45MDYzNXpNMTMuNzYsMTA2LjY0aDE0NC40OHYxMy43NmgtNTUuMDRoLTM0LjRoLTU1LjA0ek0xNDQuNDgsMTEwLjA4Yy0xLjg5OTg2LDAgLTMuNDQsMS41NDAxNCAtMy40NCwzLjQ0YzAsMS44OTk4NiAxLjU0MDE0LDMuNDQgMy40NCwzLjQ0YzEuODk5ODYsMCAzLjQ0LC0xLjU0MDE0IDMuNDQsLTMuNDRjMCwtMS44OTk4NiAtMS41NDAxNCwtMy40NCAtMy40NCwtMy40NHpNNzIuMjQsMTI3LjI4aDI3LjUydjEwLjMyaC0yNy41MnpNNTUuMDQsMTQ0LjQ4aDYxLjkyYzEuOTQzNywwIDMuNDQsMS40OTYzIDMuNDQsMy40NHYzLjQ0aC02OC44di0zLjQ0YzAsLTEuOTQzNyAxLjQ5NjMsLTMuNDQgMy40NCwtMy40NHoiPjwvcGF0aD48L2c+PHBhdGggZD0iIiBmaWxsPSJub25lIj48L3BhdGg+PC9nPjwvZz48L3N2Zz4=" alt=""></div>
-                      <h5>Programs</h5>
-                      <hr>
-                    </div>
-                    <p id="r4c1">HTML5, CSS, Bootstrap</p>
-                  </article>
-                  <article id="art-learn-right">
-                    <div id="r1c2">
-                      <div><img id="img-com" src="https://www.svgrepo.com/show/154812/communication-between-users.svg" alt=""></div>
-                      <h5>Communication</h5>
-                      <hr>
-                    </div>
-                    <p id="r234c2">Through extensive reading and writing of complex concepts, I'm well adjusted to understanding someone's position and expressing myself in relation to their point of view. And by being involved with the ins and outs of arguments within a neutral setting, I've strengthened my conflict resolution skills.</p>
-                  </article>
-                </section>
-              </div>
+        <nav class="navbar navbar-expand-lg clr-green bg-white">
+            <div class="container" id="nav-container">
+                <button 
+                    type="button" 
+                    data-toggle="collapse" 
+                    data-target="#navbarNav"  
+                    class="navbar-toggler" 
+                    aria-controls="navbarNav" 
+                    aria-expanded="false" 
+                    aria-label="Toggle">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse text-right" id="navbarNav">
+                    <ul class="navbar-nav justify-content-space-between">
+                        <li class="nav-item active"><a href="#section-1" class="nav-link">Home</a></li>
+                        <li class="nav-item active"><a href="#section-2" class="nav-link">About Me</a></li>
+                        <li class="nav-item line mt-1"><div>|</div></li>
+                        <li class="nav-item active"><a href="#section-3" class="nav-link">Projects</a></li>
+                    </ul>
+                </div>
             </div>
-          </article>
+        </nav>
 
-          <article id="art-about-right">
-            <div id="inner-about-right">
-
-              <div id="about-right">
-                <div><img id="img-hob" src="https://www.svgrepo.com/show/191009/kite-hobbies-and-free-time.svg" alt=""></div>
-                <h4>Hobbies & Free-time</h4>
-
-                <section id="sect-hob">
-                  <article id="art-hob">
-                    <div id="homestead">
-                      <img id="img-water" src="https://www.svgrepo.com/show/106869/watering-can-with-water-drops.svg" alt="">
-                      <h5>Homestead</h5>
-                      <p>I take care of a 500ft&#178; garden, 17 chickens, and a beehive.</p>
+        <Section class="text-center" id="section-1">
+            <div class="container bg-green clr-light-green">
+                <div class="row">
+                    <div class="col">
+                        <h1>Welcome to my Portfolio</h1>
+                        <h2>I'm Kason Starks</h2>
                     </div>
-
-                    <div id="philosophy">
-                      <img id="img-read" src="https://www.svgrepo.com/show/311133/reading-mode.svg" alt="">
-                      <h5>Philosophy</h5>
-                      <p>I love to watch lectures/read about the development of German Idealism & French Thought.</p>
-                    </div>
-
-                    <div id="guitar">
-                      <img id="img-guitar" src="https://www.svgrepo.com/show/53146/guitar.svg" alt="">
-                      <h5>Guitar</h5>
-                      <p>The Blues is definitely my kind of music. There's nothing like being able to recreate some of the syncopated picking patterns and melodies.</p>
-                    </div>
-
-                  </article>
-                </section>
-
-
-
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-
-      <section id="sect-projects">
-        <article id="art-projects">
-          <div>
-            <h2 id="projects">Projects</h2>
-
-            <div class="row">
-
-              <div class="col-sm-6 col-lg-4">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Promotional Email</h5>
-                    <p class="card-text">A recreated UberEats promotional email with HTML & CSS.</p>
-                    <p class="card-text">Utilizing: XHTML, table structures, and includes additional meta tags & ghost tables for Apple, Gmail, & Outlook email/webmail clients.</p>
-                    <a href="promotional-email.html" class="stretched-link" target="_blank" rel="noopener noreferrer"></a>
-                  </div>
+                    <div class="col"><img src="images\my-picture.jpg" alt="Kason Starks Profile Picture"></div>
                 </div>
-              </div>
-
-              <div class="col-sm-6 col-lg-4">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Newsletter Email</h5>
-                    <p class="card-text">A recreated Ebay newsletter email with HTML & CSS.</p>
-                    <p class="card-text">Utilizing: XHTML, table structures, and includes additional meta tags & ghost tables for Apple, Gmail, & Outlook email/webmail clients.</p>
-                    <a href="newsletter.html" class="stretched-link" target="_blank" rel="noopener noreferrer"></a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-sm-6 col-lg-4">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Transactional Email</h5>
-                    <p class="card-text">A recreated ____ transactional email with HTML & CSS.</p>
-                    <p class="card-text">Utilizing: XHTML, table structures, and includes additional meta tags & ghost tables for Apple, Gmail, & Outlook email/webmail clients.</p>
-                    <a href="transactional.html" class="stretched-link" target="_blank" rel="noopener noreferrer"></a>
-                  </div>
-                </div>
-              </div>
 
             </div>
+        </Section>
 
-            <div class="row">
-
-              <div class="col-sm-6 col-lg-4">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Product Page</h5>
-                    <p class="card-text">A recreated Spotify product page with HTML & CSS.</p>
-                    <p class="card-text">Utilizing: CSS grids, flexbox, and media queries.</p>
-                    <a href="product-page.html" class="stretched-link" target="_blank" rel="noopener noreferrer"></a>
-                  </div>
+        <section class="text-center" id="section-2">
+            <div class="container clr-cream">
+                <h2 class="clr-light-green pt-5">Get to know Me</h2>
+                <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+                    
+                    <div class="carousel-inner p-5">
+                        <div class="carousel-item active">
+                              <div class="d-inline-block w-100" src="..." alt="First slide">
+                                    <div class="slide-content">
+                                        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" class="svg-icon-1"><path d="M24 24h-24v-2h24v2zm-1-3h-22v-1h22v1zm-17-1.999h-4v-7.001c-.552 0-1-.448-1-1s.448-1 1-1h4c.552 0 1 .448 1 1s-.448 1-1 1v7.001zm8 0h-4v-7.001c-.552 0-1-.448-1-1s.448-1 1-1h4c.552 0 1 .448 1 1s-.448 1-1 1v7.001zm8 0h-4v-7.001c-.552 0-1-.448-1-1s.448-1 1-1h4c.552 0 1 .448 1 1s-.448 1-1 1v7.001zm-10-19.001l-12 9h24.001l-12.001-9zm0 3c1.104 0 2 .896 2 2s-.896 2-2 2-2-.896-2-2 .896-2 2-2z"/></svg>
+                                        <h3 class="pb-5">Education</h3>
+                                        <p>Graduated cum laude with a B.A. in Philosophy from the University of Texas at Arlington. 
+                                            Within the scope of Analytic Philosophy, my focus was in Philosophy of Science and Metaphysics.</p>
+                                        <br>
+                                        <p>Minor in Chemistry</p>
+                                        <p>I took coursework in organic chemistry, physical chemistry, and biochemistry. 
+                                            (I also had a year each of physics and biology, but shh my diploma doesn't know!)</p>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="carousel-item">
+                              <div class="d-block w-100" src="..." alt="Second slide">
+                                    <div class="slide-content">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code-slash svg-icon" viewBox="0 0 16 16">
+                                            <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"/>
+                                          </svg>
+                                        <h3 class="pb-5">Coding</h3>
+                                        <p>I've been studying program languages with courses offered by Codecademy for Front-End Web Development and Data Analytics</p>
+                                        <p>HTML, CSS, Bootstrap, Javascript</p>
+                                        <p>SQL, Excel, Python, Pandas, Tableau, Power BI</p>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="carousel-item">
+                              <div class="d-block w-100" src="..." alt="Third slide">
+                                    <div class="slide-content">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book svg-icon" viewBox="0 0 16 16">
+                                            <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                                          </svg>
+                                        <h3 class="pb-5">Philosophy</h3>
+                                        <p>I fell in love with German Idealism and Hegel's Speculative Idealism within the scope of Continental Philosophy. 
+                                            This has led me to pursue many avenues of research beyond philosophy like lacanian psychoanalysis and category theory.</p>
+                                        <p>I continue to research and write for my own philosophical development, but I would like to see my work published down the line. 
+                                            I'm also working on a literary fiction novel that tries to express this philosophical development.</p>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-block w-100" src="..." alt="Fourth slide">
+                                <div class="slide-content">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-heart-fill svg-icon" viewBox="0 0 16 16">
+                                        <path d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.707L8 2.207 1.354 8.853a.5.5 0 1 1-.708-.707L7.293 1.5Z"/>
+                                        <path d="m14 9.293-6-6-6 6V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9.293Zm-6-.811c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.691 0-5.018Z"/>
+                                      </svg>
+                                    <h3 class="pb-5">Homestead</h3>
+                                    <p>In my other-other free time, I take care of a homestead with the goal of self-sufficiency.</p>
+                                    <p>So far we have chickens and an ever-expanding garden, but we're excited to add goats and cows soon! 
+                                        I've learned a lot about food production and storage, but I think my favorite has been making my own teas and seasonings. 
+                                        Store bought basil doesn't stand a chance against fresh basil, I'm telling you!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-block w-100" src="..." alt="Fifth slide">
+                                <div class="slide-content">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-music-note-beamed svg-icon" viewBox="0 0 16 16">
+                                        <path d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13c0-1.104 1.12-2 2.5-2s2.5.896 2.5 2zm9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2z"/>
+                                        <path fill-rule="evenodd" d="M14 11V2h1v9h-1zM6 3v10H5V3h1z"/>
+                                        <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4V2.905z"/>
+                                      </svg>
+                                    <h3 class="pb-5">Guitar</h3>
+                                    <p>I learned to play guitar forever ago with the help of my quantum-handed grandpa.</p>
+                                    <p>I fell in love with the synchopated rythyms coming out of the Delta Blues at the turn of the century and its revival in the 60's. 
+                                        Mississippi John Hurt is truly a master.</p>
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselIndicators" data-slide-to="3"></li>
+                        <li data-target="#carouselIndicators" data-slide-to="4"></li>
+                        <li data-target="#carouselIndicators" data-slide-to="5"></li>
+                      </ol> 
                 </div>
-              </div>
-
             </div>
-          </div>
-        </article>
-      </section>
+        </section>
 
-    </main>
+        <section class="text-center" id="section-3">
+            <div class="container">
+                <h2 class="clr-light-green">Projects</h2>
+                <div class="row row-cols-lg-3">
+                    <div class="col card-column">
+                        <div class="card h-100">
+                            <img class="card-img d-block" src="images\spotify-screenshot.png" alt="Spotify clone preview image">
+                            <div class="overlay">
+                                <div class="card-body">
+                                    <h3 class="card-title">Spotify Premium Page Clone</h3>
+                                    <p class="card-text">Using Spotify as a style guide, I brought it to life with HTML, CSS, & Bootstrap.</p>
+                                </div>
+                                <div class="card-footer row">
+                                    <div class="col">
+                                        <a href="product-page.html" target="_blank" rel="noopener noreferrer">Project</a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="https://github.com/kcstarks/Kason-Starks-Portfolio/blob/main/product-page.html" target="_blank" rel="noopener noreferrer">Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col card-column">
+                        <div class="card h-100">
+                            <img class="card-img d-block" src="images\ebay-email.png" alt="Ebay email clone preview image">
+                            <div class="overlay">
+                                <div class="card-body">
+                                    <h3 class="card-title">Ebay Email Clone</h3>
+                                    <p class="card-text">Using an Ebay email as a style guide, I brought it to life with HTML, inline CSS, and Ghost Tables for cross-platform compatibility.</p>
+                                </div>
+                                <div class="card-footer row">
+                                    <div class="col">
+                                        <a href="newsletter.html" target="_blank" rel="noopener noreferrer">Project</a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="https://github.com/kcstarks/Kason-Starks-Portfolio/blob/main/newsletter.html" target="_blank" rel="noopener noreferrer">Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col card-column">
+                        <div class="card h-100">
+                            <img class="card-img d-block" src="images\ubereats-email.png" alt="UberEats email clone preview image">
+                            <div class="overlay">
+                                <div class="card-body">
+                                    <h3 class="card-title">UberEats Email Clone</h3>
+                                    <p class="card-text">Using an UberEats email as a style guide, I brought it to life with HTML, inline CSS, and Ghost Tables for cross-platform compatibility.</p>
+                                </div>
+                                <div class="card-footer row">
+                                    <div class="col">
+                                        <a href="promotional-email.html" target="_blank" rel="noopener noreferrer">Project</a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="https://github.com/kcstarks/Kason-Starks-Portfolio/blob/main/promotional-email.html" target="_blank" rel="noopener noreferrer">Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col card-column">
+                        <div class="card h-100">
+                            <img class="card-img d-block" src="images\train_incident2.png" alt="Train crossing incident data dashboard preview image">
+                            <div class="overlay">
+                                <div class="card-body">
+                                    <h3 class="card-title">Train Crossing Incident Report</h3>
+                                    <p class="card-text">Dataset from Kaggle cleaned up with Python and visualized in Tableau.</p>
+                                </div>
+                                <div class="card-footer row">
+                                    <div class="col">
+                                        <a href="https://public.tableau.com/app/profile/kason4451/viz/TrainCrossingIncidents/Dashboard1" target="_blank" rel="noopener noreferrer">Project</a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#" target="_blank" rel="noopener noreferrer">Python Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col card-column">
+                        <div class="card h-100">
+                            <img class="card-img d-block" src="images\grocery_sales2.png" alt="Grocery sales data dashboard preview image">
+                            <div class="overlay">
+                                <div class="card-body">
+                                    <h3 class="card-title">Tamil Nadu Grocery Sales Report</h3>
+                                    <p class="card-text">Dataset from Kaggle cleaned up with SQL and visualized in Tableau.</p>
+                                </div>
+                                <div class="card-footer row">
+                                    <div class="col">
+                                        <a href="https://public.tableau.com/app/profile/kason4451/viz/GrocerySales-TamilNadu/Dashboard1" target="_blank" rel="noopener noreferrer">Project</a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#" target="_blank" rel="noopener noreferrer">SQL Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col card-column">
+                        <div class="card"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
-  </body>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
 </html>
