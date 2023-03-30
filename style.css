@@ -4,23 +4,27 @@
     --green: #003e29;
     --white: #fff;
     --black: #000;
+    --dblue: #222A35;
     --cream: #FCD4A1;
     --burgundy: #7b060b;
-
-    
 }
 
 .bg-light-green{background-color: var(--light-green);}
 .bg-green{background-color: var(--green);} 
 .bg-white{background-color: var(--white);}
 .bg-black{background-color: var(--black);}
+.bg-dblue{background-color: var(--dblue);}
 .bg-cream{background-color: var(--cream);}
+.bg-burgundy{background-color: var(--burgundy);}
+
 
 .clr-light-green{color: var(--light-green);}
 .clr-green{color: var(--green);}
 .clr-white{color: var(--white);}
 .clr-black{color: var(--black);}
+.clr-dblue{color: var(--dblue);}
 .clr-cream{color: var(--cream);}
+.clr-burgundy{color: var(--burgundy);}
 
 
 /*//////////////////////////////////    General Cleanup & Global  /////////////////////////////////////*/
