@@ -9,6 +9,8 @@
     --burgundy: #7b060b;
 }
 
+/*//////////////////////////////////    Color Classes   /////////////////////////////////////*/
+
 .bg-light-green{background-color: var(--light-green);}
 .bg-green{background-color: var(--green);} 
 .bg-white{background-color: var(--white);}
@@ -25,6 +27,9 @@
 .clr-dblue{color: var(--dblue);}
 .clr-cream{color: var(--cream);}
 .clr-burgundy{color: var(--burgundy);}
+
+
+
 
 
 /*//////////////////////////////////    General Cleanup & Global  /////////////////////////////////////*/
@@ -49,6 +54,8 @@ ul, li{
 h2{font-size: 2.5rem;}
 
 
+
+
 /*//////////////////////////////////    Navigation   /////////////////////////////////////*/
 
 #navbarNav, 
@@ -61,6 +68,8 @@ h2{font-size: 2.5rem;}
 .navbar-toggler-icon{background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='%23003e29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");}
 
 .line{padding-right: 0;}
+
+
 
 
 /*//////////////////////////////////    Section 1  /////////////////////////////////////*/
@@ -83,9 +92,16 @@ h2{font-size: 2.5rem;}
     border-radius: 50%;
     transform: rotate(-10deg);
 }
+
+
+
+
 /*//////////////////////////////////    Section 2  /////////////////////////////////////*/
 
-#section-2{padding: 2rem;}
+#section-2{
+    padding: 2rem;
+    padding-bottom: 5rem;
+}
 
 #section-2 .container{min-height: 65vh;}
 
@@ -122,16 +138,50 @@ h2{font-size: 2.5rem;}
     background-color: var(--cream);
 }
 
+
+
+
+
 /*//////////////////////////////////    Section 3  /////////////////////////////////////*/
 
-#section-3{padding: 2rem;}
+#section-3{padding: 2rem;
+    padding-bottom: 10rem;}
 
 #section-3 h2{
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
 
-.card-column{margin-bottom: 2rem;}
+#section-3 h3{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#section-3 h3,
+#section-3 ul{color: var(--light-green);}
+
+#section-3 h3,
+#section-3 li{
+    white-space: nowrap;
+}
+
+
+
+
+/*//////////////////////////////////    Section 4  /////////////////////////////////////*/
+
+#section-4{padding: 2rem;}
+
+#section-4 h2{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.card-column{
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+}
 
 .card{
     height: 20rem;
@@ -174,6 +224,7 @@ h2{font-size: 2.5rem;}
 
 
 
+
 /*//////////////////////////////////    Media Queries  /////////////////////////////////////*/
 
 @media(max-width: 62em){
@@ -195,10 +246,13 @@ h2{font-size: 2.5rem;}
         padding: 0;
         margin-top: 2rem;}
     .slide-content{padding: 0.5rem;}
-
+    
     /*section 3*/
-    #section-3{padding: 0;}
-    #section-3 .container{padding: 2rem;}
+    #section-3{padding: 0rem;}
+    
+    /*section 4*/
+    #section-4{padding: 0;}
+    #section-4 .container{padding: 2rem;}
     .card:hover .overlay,
     .card:focus .overlay,
     .card:active .overlay{height: 100%;}
