@@ -1,0 +1,269 @@
+:root{
+    --black: #000;
+    --white: #fff;
+    --green: #19e68c;
+    --gray: #919496;
+    --dgray: #222326;
+    --purple: #993399;
+
+}
+
+/*//////////////////////////////////    Style Classes  /////////////////////////////////////*/
+
+.bg-black{background-color: var(--black);}
+.bg-white{background-color: var(--white);}
+.bg-green{background-color: var(--green);}
+.bg-dgray{background-color: var(--dgray);}
+
+.clr-black{color: var(--black);}
+.clr-white{color: var(--white);}
+.clr-gray{color: var(--gray);}
+.clr-green{color: var(--green);}
+
+
+
+/*//////////////////////////////////    General Cleanup   /////////////////////////////////////*/
+
+a{
+    text-decoration: none;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, li{
+    list-style: none;
+    padding: 0;
+}
+
+
+/*//////////////////////////////////    Navigation  /////////////////////////////////////*/
+.nav-logo{filter: invert(99%) 
+    sepia(3%) 
+    saturate(636%) 
+    hue-rotate(271deg) 
+    brightness(119%) 
+    contrast(100%);
+}
+
+#navbarNav{justify-content: end;}
+
+.nav-link:hover{color: var(--purple) !important;}
+
+.line{padding-right: 0;}
+
+
+/*//////////////////////////////////    Section 1  /////////////////////////////////////*/
+
+#section-1{
+    padding: 6.25rem 1rem;
+}
+
+.laptop{
+    position: relative;
+    left: 1.7rem;
+    z-index: 1;
+    width: 8.5rem;
+    height: 5rem;
+}
+
+.circle{
+    --img-size: 2.125rem;
+    position: relative;
+    right: 4rem;
+    z-index: 2;
+    width: var(--img-size);
+    height: var(--img-size);
+}
+
+.check{
+    position: relative;
+    right: 5.7rem;
+    z-index: 3;
+    width: 0.679rem;
+    height: 0.559rem;
+}
+
+#section-1 h1{
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+#section-1 p{
+    padding-bottom: 2rem;
+}
+
+.button{
+    border-radius: 500px;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 14px 32px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    transition: all .5s ease;
+}
+
+.button-white{
+    background-color: var(--white);
+    color: var(--black);
+    border: none;
+}
+
+.button:hover{transform: scale(1.1);}
+
+/*//////////////////////////////////    Section 2     /////////////////////////////////////*/
+
+#section-2{
+    padding: 3rem 1rem;
+}
+
+#section-2 h3{
+    font-size: 2rem;
+    font-weight: 900;
+    padding: 1rem 1rem;
+}
+
+.badge-row{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.badge-col{
+    padding: 0.5rem 0.5rem;
+}
+
+.apple-badge{
+    width: 7.5rem;
+    max-width: 7.5rem;
+    height:2.5rem;
+}
+.google-badge{
+    width: 9.2rem !important;
+    height: 3.56rem;
+    margin: -8px !important;
+}
+.microsoft-badge{
+    width: 6.93rem;
+    height: 2.5rem;
+}
+.amazon-badge{
+    width: 8.375rem !important;
+    height: 2.5rem;
+}
+
+
+/*//////////////////////////////////    Section 3  /////////////////////////////////////*/
+
+#section-3{
+    padding: 5rem 0;
+}
+
+.all-devices{
+    width: 30rem;
+
+}
+
+#section-3 h3{
+    font-size: 2rem;
+    font-weight: 900;
+    padding-top: 2rem;
+}
+
+.device-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-flow: wrap;
+    padding-top: 2rem;
+}
+
+.device-list li:last-child{
+    position: relative;
+    top: 0.6rem;
+}
+
+.device:not(:last-child)::after {
+    font-size: 1.5rem;
+    content: "•";
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: var(--green);
+}
+
+.device{
+    text-transform: uppercase;
+}
+
+.device a{
+    text-decoration: underline;
+    color: var(--green);
+}
+
+/*//////////////////////////////////    Footer     /////////////////////////////////////*/
+
+footer,
+footer h4{font-size: 1rem;}
+
+.social-media,
+.link-bar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.social-media{
+    align-items: flex-start;
+    max-width: 190px;
+    width: 100%;
+    margin: 20px 15px 0 183px;
+}
+
+.social{
+    max-width: 24px;
+    max-height: 24px;
+    margin-left: 5px;
+}
+
+.link-bar,
+.usa {
+    font-size: 0.75rem;
+    color: var(--gray)
+}
+
+.link-bar ul{
+    width: 100%;
+    max-width: 630px;
+}
+
+footer a:hover{
+    color: var(--purple);
+    text-decoration: none;
+}
+
+.social:hover{
+    filter: invert(25%) sepia(26%) saturate(4107%) hue-rotate(266deg) brightness(94%) contrast(91%);
+}
+
+
+/*//////////////////////////////////    Media Queries   /////////////////////////////////////*/
+
+@media(max-width: 62em){
+    /*Navigation*/
+    .line{padding-right: 3;}
+    .line div{
+        display: inline-block;
+    transform-origin: right;
+    transform: rotate(90deg);}
+    /*Section 3*/
+    .all-devices{ width: 15    rem;}
+}

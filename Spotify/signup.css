@@ -1,0 +1,250 @@
+:root{
+    --fs-11: 0.6875rem;
+    --fs-14: 0.875rem;
+    --fs-32: 2rem;
+
+    --blue: #405A93;
+    --white: #fff;
+    --gray: #535353;
+    --green: #1ed760;
+
+}
+
+.fs-11{font-size: var(--fs-11);}
+.fs-14{font-size: var(--fs-14);}
+.fs-32{font-size: var(--fs-32);}
+.clr-gray{color: var(--gray);}
+.clr-green{color: var(--green);}
+
+
+/*//////////////////////////////////    General Cleanup & Global   /////////////////////////////////////*/
+
+a{
+    text-decoration: none;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, li{
+    list-style: none;
+    padding: 0;
+}
+
+.container{
+    max-width: 28.125rem;
+}
+
+/*//////////////////////////////////    Heading   /////////////////////////////////////*/
+
+#section-main h2{
+    letter-spacing: -0.04em;
+    margin: 2rem 0;
+}
+
+#section-main li{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1.375rem;
+}
+
+.button{
+    border-radius: 500px;
+    font-size: 1rem;
+    line-height: 20px;
+    padding: 14px 32px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    transition: all .5s ease;
+}
+
+.button span{
+    padding-left: 1rem;
+}
+
+.fb-button{
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+#fb{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.g-button{
+    color: var(--gray)
+}
+
+.or{
+    display: flex;
+    flex-direction: row;
+}
+
+/*Google Button*/
+
+.st0{fill:#1A73E8;}
+.st1{fill:#EA4335;}
+.st2{fill:#4285F4;}
+.st3{fill:#FBBC04;}
+.st4{fill:#34A853;}
+.st5{fill:#4CAF50;}
+.st6{fill:#1E88E5;}
+.st7{fill:#E53935;}
+.st8{fill:#C62828;}
+.st9{fill:#FBC02D;}
+.st10{fill:#1565C0;}
+.st11{fill:#2E7D32;}
+.st12{fill:#F6B704;}
+.st13{fill:#E54335;}
+.st14{fill:#4280EF;}
+.st15{fill:#34A353;}
+.st16{clip-path:url(#SVGID_2_);}
+.st17{fill:#188038;}
+.st18{opacity:0.2;fill:#FFFFFF;enable-background:new    ;}
+.st19{opacity:0.3;fill:#0D652D;enable-background:new    ;}
+.st20{clip-path:url(#SVGID_4_);}
+.st21{opacity:0.3;fill:url(#_45_shadow_1_);enable-background:new    ;}
+.st22{clip-path:url(#SVGID_6_);}
+.st23{fill:#FA7B17;}
+.st24{opacity:0.3;fill:#174EA6;enable-background:new    ;}
+.st25{opacity:0.3;fill:#A50E0E;enable-background:new    ;}
+.st26{opacity:0.3;fill:#E37400;enable-background:new    ;}
+.st27{fill:url(#Finish_mask_1_);}
+.st28{fill:#FFFFFF;}
+.st29{fill:#0C9D58;}
+.st30{opacity:0.2;fill:#004D40;enable-background:new    ;}
+.st31{opacity:0.2;fill:#3E2723;enable-background:new    ;}
+.st32{fill:#FFC107;}
+.st33{opacity:0.2;fill:#1A237E;enable-background:new    ;}
+.st34{opacity:0.2;}
+.st35{fill:#1A237E;}
+.st36{fill:url(#SVGID_7_);}
+.st37{fill:#FBBC05;}
+.st38{clip-path:url(#SVGID_9_);fill:#E53935;}
+.st39{clip-path:url(#SVGID_11_);fill:#FBC02D;}
+.st40{clip-path:url(#SVGID_13_);fill:#E53935;}
+.st41{clip-path:url(#SVGID_15_);fill:#FBC02D;}
+
+
+#Capa_1{
+    width: 2rem;
+    height: 2rem;
+    enable-background:new 0 0 150 150;
+}
+
+
+/*//////////////////////////////////    Form   /////////////////////////////////////*/
+
+input{
+    height: 3rem;
+    border-radius: 5px;
+}
+
+input[type=text]{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+input[name=name]{
+    margin-bottom: 0;
+}
+
+span label[for=name]{
+    margin-bottom: 2rem;
+    font-size: 0.875rem;
+}
+
+/*//////    DOB FORM    //////*/
+
+.dob_group{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dob_input{
+    display: flex;
+
+}
+
+input[type=month]{
+    width: 12.5rem;
+}
+
+input[type=day]{
+    width: 5.625rem;
+}
+
+input[type=year]{
+    width: 7rem;
+}
+
+
+/*//////    Gender FORM    //////*/
+
+label[for=gender_group]{
+    margin-top: 2rem;
+}
+
+.gender_group{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.gender_col{
+    display: flex;
+    flex-direction: row;
+}
+
+.gender_col label{
+    margin-bottom: 0rem !important;
+    white-space: nowrap;
+    padding-top: 0.8rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+}
+
+.shareinfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.shareinfo label{
+    margin-bottom: 0rem;
+    padding-left: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.button-signup{
+    background-color: var(--green);
+}
+
+.button-signup span{
+    padding: 0;
+}
+
+@media (max-width: 50em){
+    /*DOB Form*/
+    input[type=month]{
+        width: 8rem;
+    }
+    
+    input[type=day]{
+        width: 5rem;
+    }
+    
+    input[type=year]{
+        width: 5rem;
+    }
+}

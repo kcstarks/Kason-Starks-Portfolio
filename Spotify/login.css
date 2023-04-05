@@ -1,0 +1,186 @@
+:root{
+    --fs-11: 0.6875rem;
+    --fs-14: 0.875rem;
+    --fs-18: 1.125rem;
+    --fs-32: 2rem;
+    
+
+    --blue: #405A93;
+    --white: #fff;
+    --gray: #535353;
+    --green: #1ed760;
+
+}
+
+
+/*////////////////////////////////      Style Classes        /////////////////////////////////////*/
+
+.fs-11{font-size: var(--fs-11);}
+.fs-14{font-size: var(--fs-14);}
+.fs-18{font-size: var(--fs-18);}
+.fs-32{font-size: var(--fs-32);}
+.clr-gray{color: var(--gray);}
+.clr-green{color: var(--green);}
+
+
+
+
+
+
+
+/*//////////////////////////////////    General Cleanup & Global   /////////////////////////////////////*/
+
+a{
+    text-decoration: none;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, li{
+    list-style: none;
+    padding: 0;
+}
+
+.container{
+    width: 28rem;
+}
+
+
+/*//////////    Heading     ///////*/
+#section-main li{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-weight: 900;
+    margin-top: 3rem;
+}
+
+.button{
+    border-radius: 500px;
+    font-size: 1rem;
+    line-height: 20px;
+    padding: 7px 31px;
+    font-weight: bold;
+    transition: all .5s ease;
+    letter-spacing: 0.107em
+}
+
+li button{
+    width: 100%;
+}
+
+.button svg{
+    max-width: 1.5rem;
+    margin-right: 0.3rem;
+}
+
+.fb-button{
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+#fb{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+/*Google icon*/
+.st0{fill:#1A73E8;}
+.st1{fill:#EA4335;}
+.st2{fill:#4285F4;}
+.st3{fill:#FBBC04;}
+.st4{fill:#34A853;}
+.st5{fill:#4CAF50;}
+.st6{fill:#1E88E5;}
+.st7{fill:#E53935;}
+.st8{fill:#C62828;}
+.st9{fill:#FBC02D;}
+.st10{fill:#1565C0;}
+.st11{fill:#2E7D32;}
+.st12{fill:#F6B704;}
+.st13{fill:#E54335;}
+.st14{fill:#4280EF;}
+.st15{fill:#34A353;}
+.st16{clip-path:url(#SVGID_2_);}
+.st17{fill:#188038;}
+.st18{opacity:0.2;fill:#FFFFFF;enable-background:new    ;}
+.st19{opacity:0.3;fill:#0D652D;enable-background:new    ;}
+.st20{clip-path:url(#SVGID_4_);}
+.st21{opacity:0.3;fill:url(#_45_shadow_1_);enable-background:new    ;}
+.st22{clip-path:url(#SVGID_6_);}
+.st23{fill:#FA7B17;}
+.st24{opacity:0.3;fill:#174EA6;enable-background:new    ;}
+.st25{opacity:0.3;fill:#A50E0E;enable-background:new    ;}
+.st26{opacity:0.3;fill:#E37400;enable-background:new    ;}
+.st27{fill:url(#Finish_mask_1_);}
+.st28{fill:#FFFFFF;}
+.st29{fill:#0C9D58;}
+.st30{opacity:0.2;fill:#004D40;enable-background:new    ;}
+.st31{opacity:0.2;fill:#3E2723;enable-background:new    ;}
+.st32{fill:#FFC107;}
+.st33{opacity:0.2;fill:#1A237E;enable-background:new    ;}
+.st34{opacity:0.2;}
+.st35{fill:#1A237E;}
+.st36{fill:url(#SVGID_7_);}
+.st37{fill:#FBBC05;}
+.st38{clip-path:url(#SVGID_9_);fill:#E53935;}
+.st39{clip-path:url(#SVGID_11_);fill:#FBC02D;}
+.st40{clip-path:url(#SVGID_13_);fill:#E53935;}
+.st41{clip-path:url(#SVGID_15_);fill:#FBC02D;}
+
+.g-button{
+    color: var(--gray)
+}
+
+#Capa_1{
+    width: 2rem;
+    height: 2rem;
+    enable-background:new 0 0 150 150;
+}
+
+.or{
+    display: flex;
+    flex-direction: row;
+}
+
+
+/*////////////       Form       ///////////*/
+
+input[type=text]{
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+.form-foot{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.login-button{
+    background-color: var(--green);
+}
+
+
+/*////////////       Footer       ///////////*/
+
+.signup h2{
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.signup button{
+    font-size: var(--fs-14) !important;
+}
