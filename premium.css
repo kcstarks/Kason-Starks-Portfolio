@@ -9,19 +9,6 @@
 
 /*All*/
 
-
-@media(min-width: 45em){
-    .card ul:nth-child(2){height: 276px;}
-}
-
-@media(max-width: 62em){
-    .line{padding-right: 3;}
-    .line div{
-        display: inline-block;
-    transform-origin: right;
-    transform: rotate(90deg);}
-}
-
 .bg-black{background-color: var(--black);}
 .bg-white{background-color: var(--white);}
 .bg-offwhite{background-color: var(--offwhite);}
@@ -224,4 +211,19 @@ footer a:hover{
 
 .social:hover{
     filter: invert(25%) sepia(26%) saturate(4107%) hue-rotate(266deg) brightness(94%) contrast(91%);
+}
+
+
+/*//////////////////////      Media Queries      ///////////////////////*/
+
+@media(min-width: 45em){
+    .card ul:nth-child(2){height: 276px;}
+}
+
+@media(max-width: 62em){
+    .line{padding-right: 3;}
+    .line div{
+        display: inline-block;
+    transform-origin: right;
+    transform: rotate(90deg);}
 }
